@@ -1,0 +1,12 @@
+{
+    "quiz" : [
+       {
+          "question1": "Quel âge avez-vous ?",
+          "img":"719768.jpg"
+       },
+       {
+          "question2": "Êtes vous sûr ?",
+          "img":"719768.jpg"
+       }
+    ]
+ }
