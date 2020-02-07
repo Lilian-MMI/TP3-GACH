@@ -62,7 +62,8 @@
         document.write(`<h2>${question.titre}</h2>`);
         document.write(`<img src=${question.image} >`);
         question.reponses.forEach(response => {
-          document.write(`<h3>${response.titre}</h3>`);
+          document.write(`<button>${response.titre}</button>`);
+
         })
       })
     }).catch(err => {
