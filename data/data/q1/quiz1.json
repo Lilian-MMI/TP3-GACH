@@ -1,18 +1,17 @@
 {
-  "question": [
-    {
-      "id": 1,
-      "titre": "Quel âge avez-vous ?",
-      "image":"719768.jpg",
-      "reponses": {
+    "question": [{
         "id": 1,
-        "titre": "73 ans",
-        "correcte": true
-      },
-      {
-          "id" : 2,
-          "titre": "73 ans"
-      }
-    }
-  ]
+        "titre": "Quel âge avez-vous ?",
+        "image": "719768.jpg",
+        "reponses": [{
+                "id": 1,
+                "titre": "73 ans",
+                "correcte": true
+            },
+            {
+                "id": 2,
+                "titre": "73 ans"
+            }
+        ]
+    }]
 }
