@@ -2,7 +2,7 @@
     "question": [{
         "id": 1,
         "titre": "Quel âge avez-vous ?",
-        "image": "719768.jpg",
+        "image": "../data/data/q1/719768.jpg",
         "reponses": [{
                 "id": 1,
                 "titre": "73 ans",
@@ -10,7 +10,7 @@
             },
             {
                 "id": 2,
-                "titre": "73 ans"
+                "titre": "56 ans"
             }
         ]
     }]
