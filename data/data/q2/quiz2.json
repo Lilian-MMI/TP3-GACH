@@ -1,11 +1,11 @@
 {
     "quiz" : [
        {
-          "question1": "Quel âge avez-vous 2 ?",
+          "question": "Quel âge avez-vous 2 ?",
           "img":"Wallpaper.jpg"
        },
        {
-          "question2": "Êtes vous sûr 2 ?",
+          "question": "Êtes vous sûr 2 ?",
           "img":"Wallpaper.jpg"
        }
     ]
