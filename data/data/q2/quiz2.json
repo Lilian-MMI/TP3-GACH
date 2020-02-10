@@ -1,12 +1,33 @@
 {
-    "quiz" : [
-       {
-          "question": "Quel âge avez-vous 2 ?",
-          "img":"Wallpaper.jpg"
-       },
-       {
-          "question": "Êtes vous sûr 2 ?",
-          "img":"Wallpaper.jpg"
-       }
-    ]
- }
+   "question": [{
+       "id": 1,
+       "titre": "Vous êtes né quand?",
+       "image": "../data/data/q2/wallpapers.jpg",
+       "reponses": [{
+               "id": 1,
+               "titre": "73 ans",
+               "correcte": true
+           },
+           {
+               "id": 2,
+               "titre": "56 ans"
+           }
+       ]
+   },
+   {
+       "id": 2,
+       "titre": "Qand êtes-vous né ?",
+       "image": "../data/data/q2/wallpapers.jpg",
+       "reponses": [{
+               "id": 1,
+               "titre": "73 ans",
+               "correcte": true
+           },
+           {
+               "id": 2,
+               "titre": "56 ans"
+           }
+       ]
+   }
+]
+}
