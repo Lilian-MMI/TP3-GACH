@@ -25,7 +25,6 @@ export default {
     return {
       listeTheme: data.listeTheme,
       idTheme: null,
-      listeQuiz: data.idTheme
     };
   },
   methods: {
