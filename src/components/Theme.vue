@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { getTheme } from "../../data/data1.js";
+import { getTheme } from "../../data/quiz.js";
 export default {
   name: "Theme",
   props: ["idTheme"],
