@@ -24,7 +24,8 @@ export default {
   data: function() {
     return {
       listeTheme: data.listeTheme,
-      idTheme: null
+      idTheme: null,
+      listeQuiz: data.idTheme
     };
   },
   methods: {
