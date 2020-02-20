@@ -31,5 +31,5 @@ export function getQuiz(id) {
 }
 /* Retourne les quiz qui ont comment paramètre l'id associé */
 export function getListeQuiz(idTheme) {
-  return listeQuiz.find(item => item.idTheme === idTheme);
+  return listeQuiz.filter(item => item.idTheme === idTheme);
 }
