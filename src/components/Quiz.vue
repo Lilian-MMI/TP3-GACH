@@ -1,5 +1,6 @@
 <template>
-  <div>Quiz : {{ idQuiz }}</div>
+  <h3>Quiz : {{ idQuiz }}</h3>
+  <div>Question : {{ question.titre }}</div>
 </template>
 
 <script>
@@ -12,7 +13,7 @@ export default {
   },
   computed: {
     quiz: function() {
-      return getQuizAjax(this.idQuiz);
+      const json = getQuizAjax(this.idQuiz);
     }
   }
 };
