@@ -1,4 +1,4 @@
-<template>
+<template v-if="idQuiz">
   <h3>Quiz : {{ idQuiz }}</h3>
   <div>Question : {{ question.titre }}</div>
 </template>
