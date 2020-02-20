@@ -19,6 +19,16 @@ export const listeQuiz = [
     id: 2,
     titre: "Le surréalisme",
     idTheme: 1
+  },
+  {
+    id: 1,
+    titre: "Quiz 1 pour theme 2",
+    idTheme: 2
+  },
+  {
+    id: 2,
+    titre: "Quiz 2 pour theme 2",
+    idTheme: 2
   }
 ];
 
