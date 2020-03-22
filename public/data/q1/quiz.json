@@ -1,7 +1,7 @@
 [
    {
       "id": 1,
-      "titre": "Qui a peint la Joconde ?",
+      "titre": "Q1. Qui a peint la Joconde ?",
       "img": "joconde.jpg",
       "reponses": [
          {
@@ -21,21 +21,21 @@
    },
    {
       "id": 2,
-      "titre": "Qui a peint la Joconde ?",
+      "titre": "Q2. Qui a peint La Nuit étoilée ?",
       "img": "joconde.jpg",
       "reponses": [
          {
             "id": 1,
-            "titre": "Le Titien"
+            "titre": "Léonard de Vinci"
          },
          {
             "id": 2,
-            "titre": "Léonard de Vinci",
+            "titre": " Vincent van Gogh",
             "correcte": true
          },
          {
             "id": 1,
-            "titre": "Michel Ange"
+            "titre": "Claude Monet"
          }
       ]
    }
