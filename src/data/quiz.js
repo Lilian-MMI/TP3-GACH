@@ -19,6 +19,11 @@ export const listeQuiz = [
     id: 2,
     titre: "Le surréalisme",
     idTheme: 1
+  },
+  {
+    id: 3,
+    titre: "Les membres de la famille royale",
+    idTheme: 2
   }
 ];
 
@@ -28,4 +33,10 @@ export function getTheme(id) {
 
 export function getQuiz(id) {
   return listeQuiz.find(item => item.id === id);
+}
+
+// recherche les quiz rattachés à un thème dont l'id est
+// passé en paramètre
+export function getListeQuiz(idTheme) {
+  return listeQuiz.filter(item => item.idTheme === idTheme);
 }

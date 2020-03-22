@@ -1,22 +1,23 @@
 <template>
   <div>
     <h2 class="theme-title">Thème</h2>
-    <button
-      class="btn btn-primary d-block"
-      @click="montrerListe = !montrerListe"
-    >
-      {{ theme ? theme.titre : "Choisir un thème..." }}
-    </button>
-    <div class="btn-group-vertical btn-group-lg" v-if="montrerListe">
+    <div class="d-flex flex-column">
       <button
-        type="button"
-        class="btn btn-secondary"
-        v-for="theme in listeTheme"
-        :key="theme.id"
-        @click="selectTheme(theme)"
+        class="btn btn-primary d-block"
+        @click="montrerListe = !montrerListe"
       >
-        {{ theme.titre }}
+        {{ theme ? theme.titre : "Choisir un thème..." }}
       </button>
+      <div class="btn-group-vertical btn-group-md" v-if="montrerListe">
+        <button
+          class="btn btn-secondary text-left"
+          v-for="theme in listeTheme"
+          :key="theme.id"
+          @click="selectTheme(theme)"
+        >
+          {{ theme.titre }}
+        </button>
+      </div>
     </div>
   </div>
 </template>
