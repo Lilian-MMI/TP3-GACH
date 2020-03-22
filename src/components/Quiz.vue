@@ -23,7 +23,7 @@
       <label for="scales">{{ question['reponses'][2]['titre']}}</label>
     </div> <!-- div à remplacer par le composant Question --> 
 
-    <Question :idQuestion="idQuestion" @select-question="" /> <!-- A completer ultérieurement --> 
+    <!--<Question :idQuestion="idQuestion" @select-question="" /> A completer ultérieurement -->
 
   </div>
 </template>
