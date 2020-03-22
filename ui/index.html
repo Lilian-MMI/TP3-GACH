@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="../node_modules/jquery/dist/jquery_.min.js"></script>
+   <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="main.js"></script>
+   <title>Quiz</title>
+</head>
+
+<body>
+   <main class="container-fluid">
+      <div class="row vh-100">
+         <div class="col-lg-4 theme-bloc">
+            
+                  <h2 class="theme-title">Thème</h2>
+                     <button id="my-dropdown" class="btn btn-primary d-block">Les peintres de la renaissance</button>
+                     <div class="btn-group-vertical btn-group-lg">
+                        <button type="button" class="btn btn-secondary">1</button>
+                        <button type="button" class="btn btn-secondary">1</button>
+                  </div>
+            
+            <div class="d-flex align-items-end quiz-title-bloc">
+               <h3 class="flex-fill quiz-title-text">Quiz 1</h3>
+               <button type="button" class="btn btn-secondary btn-sm">Lancer</button>
+            </div>
+            <div class="progress">
+               <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">25%</div>
+            </div>
+
+            <div class="d-flex quiz-title-bloc">
+               <h3 class="flex-fill quiz-title-text">Quiz 2</h3>
+               <button type="button" class="btn btn-secondary btn-sm">Lancer</button>
+            </div>
+            <div class="progress">
+               <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0"
+                  aria-valuemax="100">33%</div>
+            </div>
+
+            <div class="d-flex quiz-title-bloc">
+               <h3 class="flex-fill quiz-title-text">Quiz 3</h3>
+               <button type="button" class="btn btn-secondary btn-sm">Lancer</button>
+            </div>
+            <div class="progress">
+               <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">25%</div>
+            </div>
+         </div>
+         <div class="col-lg-8 quiz-bloc">
+            <h2>Quiz 1</h2>
+            <ul class="nav nav-pills list-quest" id="list-quest" role="tablist">
+               <li class="nav-item">
+                  <a class="nav-link active" id="tab-q1" data-toggle="pill" href="#q1" role="tab" aria-controls="home"
+                     aria-selected="true">1</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q2" data-toggle="pill" href="#q2" role="tab" aria-controls="profile"
+                     aria-selected="false">2</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q3" data-toggle="pill" href="#q3" role="tab" aria-controls="contact"
+                     aria-selected="false">3</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q4" data-toggle="pill" href="#q4" role="tab" aria-controls="contact"
+                     aria-selected="false">4</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q5" data-toggle="pill" href="#q5" role="tab" aria-controls="contact"
+                     aria-selected="false">5</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q6" data-toggle="pill" href="#q6" role="tab" aria-controls="contact"
+                     aria-selected="false">6</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q7" data-toggle="pill" href="#q7" role="tab" aria-controls="contact"
+                     aria-selected="false">7</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q8" data-toggle="pill" href="#q8" role="tab" aria-controls="contact"
+                     aria-selected="false">8</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q9" data-toggle="pill" href="#q9" role="tab" aria-controls="contact"
+                     aria-selected="false">9</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="tab-q10" data-toggle="pill" href="#q10" role="tab" aria-controls="contact"
+                     aria-selected="false">10</a>
+               </li>
+            </ul>
+            <div class="tab-content question-bloc" id="myTabContent">
+               <div class="tab-pane fade show active" id="q1" role="tabpanel" aria-labelledby="home-tab">
+                  <img src="img/question1.jpg" class="question-img" alt="Famille royale du Royaume Uni">
+                  <h3 class="question">Depuis combien d'année la reine Elizabeth II règne-t-elle ?</h3>
+
+                  <div class="ml-3 custom-radio-group reponse-bloc">
+                     <div class="custom-radio-button">
+                        <input type="radio" id="reponse1" name="reponse" value="1">
+                        <label for="reponse1">
+                           <span></span>
+                        </label>
+                        <span class="reponse">50 ans</span>
+                     </div>
+
+                     <div class="custom-radio-button">
+                        <input type="radio" id="reponse2" name="reponse" value="2">
+                        <label for="reponse2">
+                           <span></span>
+                        </label>
+                        <span class="reponse">64 ans</span>
+                     </div>
+
+                     <div class="custom-radio-button">
+                        <input type="radio" id="reponse3" name="reponse" value="3">
+                        <label for="reponse3">
+                           <span></span>
+                        </label>
+                        <span class="reponse">70 ans</span>
+                     </div>
+
+                     <div class="custom-radio-button">
+                        <input type="radio" id="reponse4" name="reponse" value="4">
+                        <label for="reponse4">
+                           <span></span>
+                        </label>
+                        <span class="reponse">76 ans</span>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+               <div class="tab-pane fade" id="q2" role="tabpanel" aria-labelledby="profile-tab">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione delectus magnam obcaecati
+                  ipsam
+                  dolorem similique, eveniet aut dicta molestiae impedit unde beatae excepturi minus quasi
+                  suscipit
+                  alias velit fugit ducimus amet dolorum sunt! Et, sunt ut ullam consectetur voluptates ducimus,
+                  nemo
+                  eaque omnis laborum magnam at ad vero dolor nam?
+               </div>
+               <div class="tab-pane fade" id="q3" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q4" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q5" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q6" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q7" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q8" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q9" role="tabpanel" aria-labelledby="tab-q">...</div>
+               <div class="tab-pane fade" id="q10" role="tabpanel" aria-labelledby="tab-q">...</div>
+            </div>
+         </div>
+      </div>
+   </main>
+</body>
+
+</html>

@@ -13,7 +13,7 @@
 <script>
 import Theme from "./components/Theme.vue";
 import ThemeSelect from "./components/ThemeSelect.vue";
-import * as data from "../data/quiz.js";
+import * as data from "../data/quiz";
 
 export default {
   name: "app",
@@ -24,7 +24,7 @@ export default {
   data: function() {
     return {
       listeTheme: data.listeTheme,
-      idTheme: null,
+      idTheme: null
     };
   },
   methods: {

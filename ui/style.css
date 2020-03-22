@@ -1,0 +1,100 @@
+div {
+  _border: 1px solid red;
+}
+
+h2, h3 {
+   color: rgb(44, 39, 70);
+}
+
+.theme-bloc {
+  padding-top: 1rem;
+  background-color: #aca0c2;
+}
+
+.theme-title {
+  margin-right: 1rem;
+}
+
+.quiz-bloc {
+  padding-top: 1rem;
+}
+
+.quiz-title-bloc {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-title-text {
+  margin: 0;
+}
+
+.list-quest {
+  margin-top: 2rem;
+}
+
+.list-quest .nav-link {
+  font-size: 2rem;
+}
+
+.question-bloc {
+   margin-top: 1rem;
+}
+
+.question {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.question-img {
+   max-width: 600px;
+   width: 100%;
+   display: block;
+   margin: auto;
+}
+
+.reponse-bloc {
+   margin-top: 2rem;
+}
+
+.reponse {
+  font-size: 2rem;
+  display: block;
+  height: 60px;
+  margin-left: 1rem;
+}
+
+.custom-radio-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;;
+}
+
+.custom-radio-button input[type="radio"] {
+  display: none;
+}
+
+.custom-radio-button input[type="radio"] + label span {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: -1px 4px 0 0;
+  background-color: #aca0c2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.custom-radio-button input[type="radio"]:checked + label span {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+.custom-radio-button input[type="radio"]:checked + label span:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+}

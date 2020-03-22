@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="main.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <div id="app"></div>
+   <script>
+      recupereQuiz(1).then(quiz => {
+         console.log(quiz);
+         let html = `Nombre de questions ${quiz.questions.length}`;
+         quiz.questions.forEach(element => {
+            html += `<div>${element.titre}</div>`;
+         });
+            document.getElementById('app').innerHTML = html;
+      })
+   </script>
+</body>
+</html>

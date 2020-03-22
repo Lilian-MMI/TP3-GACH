@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <title>Document</title>
+</head>
+
+<body>
+   <div id="app">
+      <h1>Bonjour {{ nom }} !</h1>
+      Entrez votre nom :
+      <input v-model="nom">
+      <div v-for="rdv in listRdv" v-on:click="choixRdv(rdv.id)">{{ rdv.date }}</div> 
+      <button v-show="nom">Envoyer</button>
+   </div>
+
+   <script>
+      var data = {
+         nom: '',
+         listRdv : [
+            {id :1, date : '2020-02-03'},
+            {id :2, date : '2020-02-14'},
+            {id :3, date : '2020-02-26'},
+         ]
+      }
+      new Vue({
+         el: '#app',
+         data: data,
+         methods: {
+            choixRdv : (id) => {
+               const rdv = this.listRdv.find(item => item.id === id);
+               if (rdv) alert(rdv.date);
+               else alert(1);
+            }
+         }
+      })
+   </script>
+</body>
+
+</html>

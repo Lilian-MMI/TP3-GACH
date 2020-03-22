@@ -1,0 +1,44 @@
+{
+   "questions": [
+      {
+         "id": 1,
+         "titre": "Qui a peint la Joconde ?",
+         "img": "joconde.jpg",
+         "reponses": [
+            {
+               "id": 1,
+               "titre": "Le Titien"
+            },
+            {
+               "id": 2,
+               "titre": "Léonard de Vinci",
+               "correcte": true
+            },
+            {
+               "id": 1,
+               "titre": "Michel Ange"
+            }
+         ]
+      },
+      {
+         "id": 1,
+         "titre": "Qui a peint la Joconde ?",
+         "img": "joconde.jpg",
+         "reponses": [
+            {
+               "id": 1,
+               "titre": "Le Titien"
+            },
+            {
+               "id": 2,
+               "titre": "Léonard de Vinci",
+               "correcte": true
+            },
+            {
+               "id": 1,
+               "titre": "Michel Ange"
+            }
+         ]
+      }
+   ]
+}
