@@ -23,7 +23,7 @@
       <label for="scales">{{ question['reponses'][2]['titre']}}</label>
     </div> <!-- div à remplacer par le composant Question --> 
 
-    <!--<Question :idQuestion="idQuestion" @select-question="" /> A completer ultérieurement -->
+   <Question :idQuestion="idQuestion" @select-question="" />
 
   </div>
 </template>
@@ -54,9 +54,9 @@ export default {
     }  
   },
   methods: {
-    SelectQuestion: function(idQuestion) {
-      this.idQuestion = idQuestion;
-      this.$emit("select-question", idQuestion);
+    SelectQuestion: function({question}) {
+      this.question = question;
+      this.$emit("select-question", question);
     }
   }
 };

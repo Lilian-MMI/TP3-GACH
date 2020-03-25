@@ -7,6 +7,7 @@
       </div>
       <div class="col-lg-8">
         <Quiz :idQuiz="idQuiz" />
+        <Question :question="question" @select-question="onSelectQuestion"/>
       </div>
     </div>
   </main>
@@ -17,19 +18,22 @@ import Theme from "./components/Theme.vue";
 import ThemeSelect from "./components/ThemeSelect.vue";
 import * as data from "./data/quiz";
 import Quiz from "./components/Quiz.vue";
+import Question from "./components/Question.vue";
 
 export default {
   name: "app",
   components: {
     Theme,
     ThemeSelect,
-    Quiz
+    Quiz,
+    Question
   },
   data: function() {
     return {
       listeTheme: data.listeTheme,
       idTheme: null,
-      idQuiz: null
+      idQuiz: null,
+      Question: null
     };
   },
   methods: {
@@ -38,6 +42,9 @@ export default {
     },
     onSelectQuiz(idQuiz) {
       this.idQuiz = idQuiz;
+    },
+    onSelectQuestion(Question) {
+      this.Question = Question;
     }
   }
 };
